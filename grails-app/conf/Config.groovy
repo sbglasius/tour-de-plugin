@@ -115,3 +115,5 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+grails.databinding.dateFormats = ['MMddyyyy', 'yyyy-MM-dd', 'yyyy/MM/dd', 'yyyy-MM-dd HH:mm:ss.S', "yyyy-MM-dd'T'HH:mm:ss'Z'"]
