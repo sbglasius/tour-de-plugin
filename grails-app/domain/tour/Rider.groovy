@@ -4,7 +4,7 @@ import org.grails.databinding.BindingFormat
 
 class Rider {
     String name
-    URL image
+    String image
     Integer weight
 //    @BindingFormat('yyyy-MM-dd')
     Date born
