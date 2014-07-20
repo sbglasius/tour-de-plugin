@@ -117,3 +117,5 @@ log4j.main = {
 }
 
 grails.databinding.dateFormats = ['MMddyyyy', 'yyyy-MM-dd', 'yyyy/MM/dd', 'yyyy-MM-dd HH:mm:ss.S', "yyyy-MM-dd'T'HH:mm:ss'Z'"]
+
+grails.plugins.twitterbootstrap.fixtaglib = true
