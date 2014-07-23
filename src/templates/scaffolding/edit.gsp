@@ -31,7 +31,7 @@
 			</g:hasErrors>
 			<g:form class="form-horizontal" url="[resource:${propertyName}, action:'update']" method="PUT" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
 				<g:hiddenField name="version" value="\${${propertyName}?.version}" />
-					<g:render template="form"/>
+                    <f:all bean="${propertyName}"/>
 
 					<g:actionSubmit class="btn btn-info" action="update" value="\${message(code: 'default.button.update.label', default: 'Update')}" />
 			</g:form>

@@ -28,7 +28,7 @@
                 </div>
             </g:hasErrors>
 			<g:form url="[resource:${propertyName}, action:'save']" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
-					<g:render template="form"/>
+                    <f:all bean="${propertyName}"/>
 					<g:submitButton name="create" class="btn btn-info" value="\${message(code: 'default.button.create.label', default: 'Create')}" />
 			</g:form>
 		</div>
