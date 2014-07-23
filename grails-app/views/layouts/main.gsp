@@ -41,19 +41,14 @@
     </div>
 
     <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-    <script>
+    <asset:script>
         $(function() {
             var nav = $('*[role="navigation"].nav ul');
             nav.addClass('nav navbar-nav');
             $('#navigation').append(nav); // Move navigation to Bootstrap navigation
-
-            // Make look like real selects in Bootstrap - must be marked up in renderEditor.template
-            var datepickers = $('.date-picker');
-            datepickers.addClass('row');
-            $('.date-picker select').each(function() {
-                $(this).addClass('form-control').wrap('<div class="col-sm-3"/>');
-            })
         });
-    </script>
+    </asset:script>
+    <asset:deferredScripts/>
+
 </body>
 </html>

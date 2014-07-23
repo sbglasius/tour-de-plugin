@@ -9,4 +9,6 @@
 *
 *= require bootstrap
 *= require_self
+*= require datepicker
+*= require daterangepicker
 */

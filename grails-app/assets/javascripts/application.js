@@ -7,7 +7,7 @@
 //
 //= require jquery
 //= require bootstrap
-//= require_tree .
+//= require datepicker
 //= require_self
 
 if (typeof jQuery !== 'undefined') {
