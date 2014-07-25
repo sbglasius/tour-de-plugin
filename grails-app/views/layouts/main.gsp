@@ -35,7 +35,6 @@
     </div>
 </div>
 
-<div id="grailsLogo" role="banner">/div>
     <div class="container" role="main">
         <g:layoutBody/>
     </div>
