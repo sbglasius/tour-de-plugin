@@ -75,6 +75,8 @@ grails.project.dependency.resolution = {
         compile ":mail:1.0.6" //
         compile ":greenmail:1.3.4" // http://grails.org/plugin/greenmail
 
+        compile ":spring-security-core:2.0-RC2" // https://grails.org/plugin/spring-security-core
+
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.7.4"
         //compile ":less-asset-pipeline:1.7.0"
