@@ -19,6 +19,7 @@
 
     <g:form class="form">
         <g:actionSubmit value="Send text mail via controller" action="sendPlainTextMail" class="btn btn-info"/>
+        <g:actionSubmit value="Send html mail via controller" action="sendHtmlMail" class="btn btn-info"/>
 
     </g:form>
 </div>
