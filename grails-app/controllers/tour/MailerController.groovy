@@ -1,10 +1,8 @@
 package tour
 
 class MailerController {
-    def grailsApplication
 
     def index() {
-        println grailsApplication.config.grails.mail
     }
 
     def sendPlainTextMail() {
