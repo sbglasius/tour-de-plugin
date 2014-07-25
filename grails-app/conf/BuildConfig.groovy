@@ -44,6 +44,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://download.java.net/maven/2/"
+
     }
 
     dependencies {
@@ -71,6 +73,7 @@ grails.project.dependency.resolution = {
         runtime ':twitter-bootstrap:3.2.1' // http://grails.org/plugin/twitter-bootstrap
         compile ":fields:1.3" // https://grails.org/plugins/fields
         compile ":mail:1.0.6" //
+        compile ":greenmail:1.3.4" // http://grails.org/plugin/greenmail
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.7.4"

@@ -88,18 +88,7 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
-        grails {
-            mail {
-                host = "smtp.gmail.com"
-                port = 465
-                username = "demouser@glasius.dk"
-//        password = "yourpassword"        // Configured in ~/.grails/settings.groovy
-                props = ["mail.smtp.auth":"true",
-                         "mail.smtp.socketFactory.port":"465",
-                         "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
-                         "mail.smtp.socketFactory.fallback":"false"]
-            }
-        }
+        grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
     }
     production {
         grails.logging.jul.usebridge = false
