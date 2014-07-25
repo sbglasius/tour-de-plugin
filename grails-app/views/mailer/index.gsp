@@ -18,7 +18,7 @@
     </g:if>
 
     <g:form class="form">
-        <g:actionSubmit value="Send text mail via controller" action="sendPlainTextMail" class="btn btn-info"/>
+        <p><g:actionSubmit value="Send text mail via controller" action="sendPlainTextMail" class="btn btn-info"/></p>
 
     </g:form>
 </div>
