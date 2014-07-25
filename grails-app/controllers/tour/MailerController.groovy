@@ -1,10 +1,10 @@
 package tour
 
 class MailerController {
-    def grailsApplication
+
+    def mailSenderService
 
     def index() {
-        println grailsApplication.config.grails.mail
     }
 
     def sendPlainTextMail() {
@@ -35,5 +35,17 @@ class MailerController {
         }
         flash.message="HTML template message sent to Søren"
         redirect(action: 'index')
+    }
+
+    def sendViaService() {
+        if(mailSenderService.sendMailToUser()) {
+            flash.message="Message from service sent to Søren"
+
+        } else {
+            flash.message="Failed to send message from service to Søren"
+
+        }
+        redirect(action: 'index')
+
     }
 }

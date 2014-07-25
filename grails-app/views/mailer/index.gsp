@@ -18,9 +18,10 @@
     </g:if>
 
     <g:form class="form">
-        <g:actionSubmit value="Send text mail via controller" action="sendPlainTextMail" class="btn btn-info"/> <br/>
-        <g:actionSubmit value="Send html mail via controller" action="sendHtmlMail" class="btn btn-info"/>  <br/>
-        <g:actionSubmit value="Send html template mail via controller" action="sendHtmlTemplateMail" class="btn btn-info"/>
+        <p><g:actionSubmit value="Send text mail via controller" action="sendPlainTextMail" class="btn btn-info"/></p>
+        <p><g:actionSubmit value="Send html mail via controller" action="sendHtmlMail" class="btn btn-info"/></p>
+        <p><g:actionSubmit value="Send html template mail via controller" action="sendHtmlTemplateMail" class="btn btn-info"/></p>
+        <p><g:actionSubmit value="Send html template mail via service" action="sendViaService" class="btn btn-info"/></p>
 
     </g:form>
 </div>
