@@ -90,6 +90,9 @@ environments {
         grails.logging.jul.usebridge = true
         grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
     }
+    test {
+        grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
+    }
     production {
         grails.logging.jul.usebridge = false
         // TODO: grails.serverURL = "http://www.changeme.com"
