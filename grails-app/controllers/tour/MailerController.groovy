@@ -26,4 +26,14 @@ class MailerController {
         flash.message="HTML message sent to Søren"
         redirect(action: 'index')
     }
+
+    def sendHtmlTemplateMail() {
+        sendMail {
+            to "demo@glasius.dk"
+            subject "Hello Søren. Here's a HTML template message"
+            html g.render(template: '/mailer/templateMail', model: [name: "Søren"])
+        }
+        flash.message="HTML template message sent to Søren"
+        redirect(action: 'index')
+    }
 }
