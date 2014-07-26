@@ -31,15 +31,13 @@
         </div>
 
         <div class="navbar-collapse collapse" id="navigation">
-            <g:form controller="logout">
                 <sec:ifLoggedIn>
                     <g:form controller="logout">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><input class="btn btn-link" type="submit" value="Logout"/></li>
+                        <li><button class="btn btn-link navbar-btn">Logout</button></li>
                     </ul>
                     </g:form>
                 </sec:ifLoggedIn>
-            </g:form>
         </div><!--/.nav-collapse -->
 
     </div>
