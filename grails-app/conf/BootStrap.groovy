@@ -17,9 +17,9 @@ class BootStrap {
     }
 
     void createRolesAndUsers() {
-        def adminRole =  Role.findOrSaveWhere(authority: "ADMIN")
+        def adminRole =  Role.findOrSaveWhere(authority: "ROLE_ADMIN")
 
-        def admin =  User.findOrSaveWhere(username: "admin", password: "admin")
+        def admin =  User.findOrSaveWhere(username: "admin", password: "password")
 
         UserRole.create(admin, adminRole)
     }

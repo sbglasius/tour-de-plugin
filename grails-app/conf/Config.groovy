@@ -132,6 +132,8 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'tour.security.
 grails.plugin.springsecurity.authority.className = 'tour.security.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
+	'/dbconsole/**':                  ['permitAll'],
+	'/greenmail/**':                  ['permitAll'],
 	'/index':                         ['permitAll'],
 	'/index.gsp':                     ['permitAll'],
 	'/assets/**':                     ['permitAll'],

@@ -1,9 +1,13 @@
 package tour
 
+import grails.plugin.springsecurity.annotation.Secured
+
+@Secured(["ROLE_ADMIN"])
 class MailerController {
 
     def mailSenderService
 
+    @Secured(["ROLE_ADMIN"])
     def index() {
     }
 
