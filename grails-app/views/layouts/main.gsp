@@ -31,23 +31,33 @@
         </div>
 
         <div class="navbar-collapse collapse" id="navigation">
+            <g:form controller="logout">
+                <sec:ifLoggedIn>
+                    <g:form controller="logout">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><input class="btn btn-link" type="submit" value="Logout"/></li>
+                    </ul>
+                    </g:form>
+                </sec:ifLoggedIn>
+            </g:form>
         </div><!--/.nav-collapse -->
+
     </div>
 </div>
 
-    <div class="container" role="main">
-        <g:layoutBody/>
-    </div>
+<div class="container" role="main">
+    <g:layoutBody/>
+</div>
 
-    <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-    <asset:script>
-        $(function() {
-            var nav = $('*[role="navigation"].nav ul');
-            nav.addClass('nav navbar-nav');
-            $('#navigation').append(nav); // Move navigation to Bootstrap navigation
-        });
-    </asset:script>
-    <asset:deferredScripts/>
+<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
+<asset:script>
+    $(function() {
+        var nav = $('*[role="navigation"].nav ul');
+        nav.addClass('nav navbar-nav');
+        $('#navigation').prepend(nav); // Move navigation to Bootstrap navigation
+    });
+</asset:script>
+<asset:deferredScripts/>
 
 </body>
 </html>
