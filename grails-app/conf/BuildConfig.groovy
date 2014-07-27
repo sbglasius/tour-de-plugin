@@ -77,6 +77,9 @@ grails.project.dependency.resolution = {
 
         compile ":spring-security-core:2.0-RC4" // https://grails.org/plugin/spring-security-core
         compile ":quartz:1.0.2" // http://grails.org/plugin/quartz
+        compile ":quartz-monitor:1.0" // http://grails.org/plugin/quartz-monitor
+
+
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.7.4"
         //compile ":less-asset-pipeline:1.7.0"
