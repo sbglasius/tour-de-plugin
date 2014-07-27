@@ -144,3 +144,14 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/favicon.ico':                ['permitAll']
 ]
 
+cxf {
+    client {
+        //Another example real service to use against wsd2java script
+        weatherClient {
+            wsdl = "http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL"
+
+            clientInterface = com.cdyne.Weather
+            serviceEndpointAddress = "http://wsf.cdyne.com/WeatherWS/Weather.asmx"
+        }
+    }
+}

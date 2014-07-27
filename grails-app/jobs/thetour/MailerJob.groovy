@@ -8,6 +8,6 @@ class MailerJob {
     }
 
     def execute() {
-        println "Executing job ${new Date()}"
+//        println "Executing job ${new Date()}"
     }
 }
