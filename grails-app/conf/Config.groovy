@@ -150,7 +150,7 @@ cxf {
         weatherClient {
             wsdl = "http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL"
 
-            clientInterface = com.cdyne.Weather
+            clientInterface = "com.cdyne.ws.weatherws.WeatherSoap"
             serviceEndpointAddress = "http://wsf.cdyne.com/WeatherWS/Weather.asmx"
         }
     }
